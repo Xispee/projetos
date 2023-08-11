@@ -53,7 +53,7 @@ def saque(*, saldo_conta, valor, lista_saques, lista_depositos):
     return gerarExtrato(saldo_conta, lista_saques=lista_saques, lista_depositos=lista_depositos)
 
                 
-def deposito(saldo_conta, valor, lista_depositos, lista_saques):
+def deposito(saldo_conta, valor, lista_depositos, lista_saques, /):
     if valor_deposito > 0:
         print('''
                 Processando deposito....
